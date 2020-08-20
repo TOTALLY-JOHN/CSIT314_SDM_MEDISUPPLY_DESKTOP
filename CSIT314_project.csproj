@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52B53125-31AF-4140-A12F-11DE3442A767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSIT314_project</RootNamespace>
+    <AssemblyName>CSIT314_project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\정지환\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0528632E4500FEDDE18166C6A3EA6C470C9456B7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CSIT314_project_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addClinicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addClinicForm.Designer.cs">
+      <DependentUpon>addClinicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCPForm.Designer.cs">
+      <DependentUpon>addCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addInventoryForm.Designer.cs">
+      <DependentUpon>addInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOICForm.Designer.cs">
+      <DependentUpon>addOICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addOrderForm.Designer.cs">
+      <DependentUpon>addOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUserForm.Designer.cs">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminForm.Designer.cs">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteClinicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteClinicForm.Designer.cs">
+      <DependentUpon>deleteClinicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteCPForm.Designer.cs">
+      <DependentUpon>deleteCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteInventoryForm.Designer.cs">
+      <DependentUpon>deleteInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteOICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteOICForm.Designer.cs">
+      <DependentUpon>deleteOICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteOrderForm.Designer.cs">
+      <DependentUpon>deleteOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editClinicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editClinicForm.Designer.cs">
+      <DependentUpon>editClinicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editCPForm.Designer.cs">
+      <DependentUpon>editCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editInventoryForm.Designer.cs">
+      <DependentUpon>editInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editOICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editOICForm.Designer.cs">
+      <DependentUpon>editOICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editOrderForm.Designer.cs">
+      <DependentUpon>editOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPwdForm.Designer.cs">
+      <DependentUpon>forgotPwdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lockedAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lockedAccountForm.Designer.cs">
+      <DependentUpon>lockedAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OICForm.Designer.cs">
+      <DependentUpon>OICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printInventoryReportByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printInventoryReportByCategory.Designer.cs">
+      <DependentUpon>printInventoryReportByCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printInventoryReportByQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printInventoryReportByQuantity.Designer.cs">
+      <DependentUpon>printInventoryReportByQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printInventoryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printInventoryReportForm.Designer.cs">
+      <DependentUpon>printInventoryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printOrderReportByClinicNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printOrderReportByClinicNameForm.Designer.cs">
+      <DependentUpon>printOrderReportByClinicNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printOrderReportByMonthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printOrderReportByMonthForm.Designer.cs">
+      <DependentUpon>printOrderReportByMonthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printOrderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printOrderReportForm.Designer.cs">
+      <DependentUpon>printOrderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resetPwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetPwdForm.Designer.cs">
+      <DependentUpon>resetPwdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="unlockAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unlockAccountForm.Designer.cs">
+      <DependentUpon>unlockAccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewClinicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewClinicForm.Designer.cs">
+      <DependentUpon>viewClinicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCPForm.Designer.cs">
+      <DependentUpon>viewCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewInventoryForm.Designer.cs">
+      <DependentUpon>viewInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewOICForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewOICForm.Designer.cs">
+      <DependentUpon>viewOICForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewOrderForm.Designer.cs">
+      <DependentUpon>viewOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewOrderForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewOrderForm2.Designer.cs">
+      <DependentUpon>viewOrderForm2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addClinicForm.resx">
+      <DependentUpon>addClinicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCPForm.resx">
+      <DependentUpon>addCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addInventoryForm.resx">
+      <DependentUpon>addInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOICForm.resx">
+      <DependentUpon>addOICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addOrderForm.resx">
+      <DependentUpon>addOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminForm.resx">
+      <DependentUpon>adminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteClinicForm.resx">
+      <DependentUpon>deleteClinicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteCPForm.resx">
+      <DependentUpon>deleteCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteInventoryForm.resx">
+      <DependentUpon>deleteInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteOICForm.resx">
+      <DependentUpon>deleteOICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteOrderForm.resx">
+      <DependentUpon>deleteOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editClinicForm.resx">
+      <DependentUpon>editClinicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editCPForm.resx">
+      <DependentUpon>editCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editInventoryForm.resx">
+      <DependentUpon>editInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editOICForm.resx">
+      <DependentUpon>editOICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editOrderForm.resx">
+      <DependentUpon>editOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPwdForm.resx">
+      <DependentUpon>forgotPwdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lockedAccountForm.resx">
+      <DependentUpon>lockedAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OICForm.resx">
+      <DependentUpon>OICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventoryReport.rdlc" />
+    <EmbeddedResource Include="orderReport.rdlc" />
+    <EmbeddedResource Include="printInventoryReportByCategory.resx">
+      <DependentUpon>printInventoryReportByCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printInventoryReportByQuantity.resx">
+      <DependentUpon>printInventoryReportByQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printInventoryReportForm.resx">
+      <DependentUpon>printInventoryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printOrderReportByClinicNameForm.resx">
+      <DependentUpon>printOrderReportByClinicNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printOrderReportByMonthForm.resx">
+      <DependentUpon>printOrderReportByMonthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printOrderReportForm.resx">
+      <DependentUpon>printOrderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="resetPwdForm.resx">
+      <DependentUpon>resetPwdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unlockAccountForm.resx">
+      <DependentUpon>unlockAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewClinicForm.resx">
+      <DependentUpon>viewClinicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCPForm.resx">
+      <DependentUpon>viewCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewInventoryForm.resx">
+      <DependentUpon>viewInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewOICForm.resx">
+      <DependentUpon>viewOICForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewOrderForm.resx">
+      <DependentUpon>viewOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewOrderForm2.resx">
+      <DependentUpon>viewOrderForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CSIT314_project_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Inventory.datasource" />
+    <None Include="Properties\DataSources\Orders.datasource" />
+    <None Include="Properties\DataSources\printOrderReportByMonthForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="icons\add_clinic.jpg" />
+    <Content Include="icons\add_cp.jpg" />
+    <Content Include="icons\add_inventory.jpg" />
+    <Content Include="icons\add_oic.jpg" />
+    <Content Include="icons\add_order.jpg" />
+    <Content Include="icons\add_order_img.png" />
+    <Content Include="icons\delete_clinic.jpg" />
+    <Content Include="icons\delete_cp.jpg" />
+    <Content Include="icons\delete_inventory.jpg" />
+    <Content Include="icons\delete_oic.jpg" />
+    <Content Include="icons\delete_order.jpg" />
+    <Content Include="icons\delete_order_img.png" />
+    <Content Include="icons\exit_img.jpg" />
+    <Content Include="icons\print_inventory.jpg" />
+    <Content Include="icons\print_order.jpg" />
+    <Content Include="icons\unlock_account_img.jpg" />
+    <Content Include="icons\update_clinic.jpg" />
+    <Content Include="icons\update_cp.jpg" />
+    <Content Include="icons\update_inventory.jpg" />
+    <Content Include="icons\update_oic.jpg" />
+    <Content Include="icons\update_order.jpg" />
+    <Content Include="icons\update_order_img.png" />
+    <Content Include="icons\view_clinic.jpg" />
+    <Content Include="icons\view_cp.jpg" />
+    <Content Include="icons\view_inventory.jpg" />
+    <Content Include="icons\view_oic.jpg" />
+    <Content Include="icons\view_order.jpg" />
+    <Content Include="icons\view_order_img.png" />
+    <Content Include="item_images\logo.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
